@@ -3,14 +3,14 @@ main:
 #  - title: "Research"
 #    url: /research/
 
-  - title: "Blog"
-    url: /year-archive/
+#  - title: "Blog"
+#    url: /year-archive/
 
 #  - title: "Talks"
 #    url: /talks/    
 
   - title: "CV"
-    url: /cv/
+    url: /cv/Handley-Miner_Isaac_CV.pdf
       
 #    
 #  - title: "Portfolio"
