@@ -6,6 +6,9 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+layout: splash
+header:
+  image: /assets/images/header.jpg
 ---
 
 Hey I'm Isaac!
