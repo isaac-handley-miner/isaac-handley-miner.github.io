@@ -17,7 +17,7 @@ I'm also passionate about open science and interested in metascientific approach
 
 <!--[blog](https://isaac-handley-miner.github.io/year-archive/).-->
 
-Before joining the [Morality Lab](https://moralitylab.bc.edu/) in Fall 2020, I received my B.A. in economics from [Hamilton College](https://www.hamilton.edu/) and worked as a lab manager in the [Mind and Body Lab](https://mbl.stanford.edu/) at Stanford University.
+Before joining the [Morality Lab](https://moralitylab.bc.edu/) in Fall 2020, I received my BA in economics from [Hamilton College](https://www.hamilton.edu/) and worked as a lab manager in the [Mind and Body Lab](https://mbl.stanford.edu/) at Stanford University.
 
 <!--
 For example, some questions I'm interested in are:
