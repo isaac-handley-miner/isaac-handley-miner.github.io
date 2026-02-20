@@ -1,0 +1,9 @@
+# Build artifacts
+assets/cv.html
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,337 @@
+% Isaac J. Handley-Miner — Curriculum Vitae
+% Compile with: pdflatex cv.tex (run twice for proper formatting)
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[margin=0.85in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% --- Colors ---
+\definecolor{linkblue}{HTML}{2a5db0}
+\definecolor{mutedgray}{HTML}{666666}
+
+% --- Hyperlink setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdftitle={Isaac J. Handley-Miner — CV},
+    pdfauthor={Isaac J. Handley-Miner}
+}
+
+% --- Section formatting ---
+\titleformat{\section}
+    {\large\bfseries\scshape}
+    {}
+    {0em}
+    {}
+    [\titlerule]
+
+\titlespacing{\section}{0pt}{1.2em}{0.6em}
+
+% --- Remove paragraph indentation ---
+\setlength{\parindent}{0pt}
+
+% --- List formatting ---
+\setlist[itemize]{leftmargin=0pt, label={}, itemsep=0.4em, parsep=0pt}
+
+% --- Custom commands ---
+\newcommand{\cventry}[3]{%
+    \textbf{#1}\hfill #2\\
+    {\color{mutedgray}#3}\par\vspace{0.3em}%
+}
+
+\newcommand{\cventrynote}[4]{%
+    \textbf{#1}\hfill #2\\
+    {\color{mutedgray}#3}\\
+    {\small\color{mutedgray}#4}\par\vspace{0.3em}%
+}
+
+\newcommand{\pub}[1]{\par\hangindent=1.5em\hangafter=1 #1\par\vspace{0.4em}}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{mutedgray} Isaac J. Handley-Miner — CV — Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+% === HEADER ===
+\begin{center}
+    {\LARGE\bfseries Isaac J. Handley-Miner, Ph.D.}\\[0.4em]
+    {\color{mutedgray}
+    Department of Psychology \& Neuroscience, Boston College\\
+    140 Commonwealth Ave, McGuinn 300, Chestnut Hill, MA 02467\\[0.2em]
+    \href{mailto:isaac.handley-miner@bc.edu}{isaac.handley-miner@bc.edu}}
+\end{center}
+
+% === EMPLOYMENT ===
+\section{Employment}
+
+\cventry{Postdoctoral Research Fellow}{2025--present}
+    {Department of Psychology \& Neuroscience, Boston College, Chestnut Hill, MA}
+
+% === EDUCATION ===
+\section{Education}
+
+\cventrynote{Ph.D., Psychology}{2020--2025}
+    {Boston College, Chestnut Hill, MA}
+    {Advisor: Liane Young}
+
+\cventry{B.A., Economics (Honors)}{2010--2014}
+    {Hamilton College, Clinton, NY}
+
+% === FELLOWSHIPS & FUNDING ===
+\section{Fellowships \& Funding}
+
+\cventrynote{Alfred P. Sloan Foundation}{2024--2027}
+    {\$249,538}
+    {``Truth in the age of large language models''}
+
+\cventrynote{BITSS Catalyst Grant}{2024}
+    {\$1,000}
+    {``Transparent piloting: Understanding researcher practices and attitudes towards reporting pilot studies in psychology''}
+
+\cventrynote{National Defense Science \& Engineering Graduate (NDSEG) Fellowship}{2021--2024}
+    {\$128,900}
+    {``Who to trust? Investigating cognitive and neural mechanisms influencing evaluations of (mis)information''}
+
+\cventrynote{Schiller Institute Grants for Exploratory Collaborative Scholarship}{2021--2022}
+    {\$14,938}
+    {``Leveraging philosophical and folk conceptions of truth to improve science communication practices''}
+
+% === AWARDS ===
+\section{Awards \& Recognitions}
+
+\cventry{Graduate Student Poster Award Runner Up}{2023}
+    {Society for Personality and Social Psychology}
+
+\cventry{Graduate Travel Award}{2021}
+    {Society for Personality and Social Psychology}
+
+\cventry{Presidential Fellowship}{2020}
+    {Boston College}
+
+\cventry{Soper Research Prize}{2014}
+    {Hamilton College}
+
+\cventry{Magna Cum Laude; Phi Beta Kappa}{2014}
+    {Hamilton College}
+
+\cventry{Wertimer Prize in Economics}{2013}
+    {Hamilton College}
+
+\cventry{Coleridge Prize}{2012}
+    {Hamilton College}
+
+% === PUBLICATIONS ===
+\section{Published \& In Press Manuscripts}
+
+{\small *Co-first authorship}\vspace{0.4em}
+
+\pub{Oktar, K.,* \textbf{Handley-Miner, I. J.},* Zollman, K., Kleiman-Weiner, M., \& Young, L. (in press). Intuitive theories of truth. \textit{Trends in Cognitive Sciences}.}
+
+\pub{\textbf{Handley-Miner, I. J.}, Pope, M., Atkins, R. K., Jones-Jang, S. M., McKaughan, D. J., Phillips, J., \& Young, L. (2023). The intentions of information sources can affect what information people think qualifies as true. \textit{Scientific Reports}, 13, 7718. \href{https://doi.org/10.1038/s41598-023-34806-4}{doi:10.1038/s41598-023-34806-4}}
+
+\pub{Crum, A. J., Santoro, E., \textbf{Handley-Miner, I. J.}, Smith, E. N., Evans, K., Moraveji, N., Achor, S., \& Salovey, P. (2023). Evaluation of the `rethink stress' mindset intervention: A metacognitive approach to changing mindsets. \textit{Journal of Experimental Psychology: General}, 152(9), 2603--2622. \href{https://doi.org/10.1037/xge0001396}{doi:10.1037/xge0001396}}
+
+\pub{\textbf{Handley-Miner, I. J.} \& Young, L. (2021). Do knowledge representations facilitate learning under epistemic uncertainty? \textit{Behavioral and Brain Sciences}, 44, e156. \href{https://doi.org/10.1017/S0140525X20001806}{doi:10.1017/S0140525X20001806}}
+
+\pub{Turnwald, B. P., \textbf{Handley-Miner, I. J.}, Samuels, N. A., Markus, H. R., \& Crum, A. J. (2020). Nutritional analysis of foods and beverages depicted in top-grossing US movies, 1994--2018. \textit{JAMA Internal Medicine}, 181(1), 61--70. \href{https://doi.org/10.1001/jamainternmed.2020.5421}{doi:10.1001/jamainternmed.2020.5421}}
+
+\pub{Crum, A. J., \textbf{Handley-Miner, I. J.}, \& Smith, E. N. (2020). The stress mindset intervention. In A. J. Crum \& G. M. Walton (Eds.), \textit{Handbook of Wise Interventions: How Social-Psychological Insights Can Help Solve Problems}. New York, NY: Guilford Press.}
+
+\pub{Rivers, S. E., \textbf{Handley-Miner, I. J.}, Caruso, D., \& Mayer, J. D. (2020). Emotional intelligence. In R. J. Sternberg (Ed.), \textit{The Cambridge Handbook of Intelligence}. New York, NY: Cambridge University Press.}
+
+% === MANUSCRIPTS IN SUBMISSION ===
+\section{Manuscripts in Submission}
+
+\pub{\textbf{Handley-Miner, I. J.} \& Young, L. (under review). How does the process of explaining affect one's beliefs? \href{https://doi.org/10.71240/lcyc.139469}{doi:10.71240/lcyc.139469}}
+
+\pub{\textbf{Handley-Miner, I. J.},* Mazzuchi, T.,* Kleiman-Weiner, M., \& Young, L. (under review). Registered report: The role of consequence in evaluating claims as true or false. \href{https://doi.org/10.31234/osf.io/r8swt_v1}{doi:10.31234/osf.io/r8swt\_v1}}
+
+\pub{\textbf{Handley-Miner, I. J.}, Bochynska, A., Buttliere, B., Chung, K. L., Elsherif, M., Graham, C., Heiser, N. H., Loenneker, H. D., S\ae trevik, B., Seetahul, Y., Sulik, J., Tomczak, K., Zygar-Hoffmann, C., \& Neff, M. B. (under review). A call for greater transparency in piloting. \href{https://doi.org/10.31234/osf.io/q95zn_v1}{doi:10.31234/osf.io/q95zn\_v1}}
+
+\pub{Atkins, R., \textbf{Handley-Miner, I. J.}, Pope, M., McKaughan, D. J., \& Young, L. (in submission). Two functions of listener truth-ascriptions.}
+
+\pub{Seetahul, Y., Elsherif, M., Zygar-Hoffmann, C., Wallrich, L., Silverstein, P., S\ae trevik, B., Pit, I. L., Loenneker, H. D., Heiser, N. H., \textbf{Handley-Miner, I. J.}, Graham, C. J., Chou, Y. Y., Buttliere, B., Bochynska, A., Beitner, J., \& Neff, M. B. (in submission). What pilot studies can (and cannot) do for validity in psychological research.}
+
+% === MANUSCRIPTS IN PREPARATION ===
+\section{Manuscripts in Preparation}
+
+\pub{\textbf{Handley-Miner, I. J.}, Zheng, H., \& Young, L. (in prep). People's descriptive and normative judgments about how other people and LLMs should label information as true and false.}
+
+\pub{Bochynska, A., Ambrosini, E., Bardeau, A., Beitner, J., Buttliere, B., Chou, Y., Chung, K. L., Di Pietro, I., Elsherif, M., Gourdon-Kanhukamwe, A., Graham, C., \textbf{Handley-Miner, I. J.}, Hergert, J., Loenneker, H. D., Montefinese, M., Pit, I., Pronizius, E., Quandt, J., Srivastava, R., Stoevenbelt, A., Viviani, G., Wallrich, L., Zygar-Hoffmann, C., \& Neff, M. B. (in prep). A meta-assessment of piloting practices in psychological research.}
+
+% === REPLICATION REPORTS ===
+\section{Replication Reports (Transparent Replications Project)}
+
+\pub{\textbf{Handley-Miner, I. J.} \& Metskas, A. (2025). Evaluation of a study from ``Sharing of misinformation is habitual, not just lazy or biased'' (PNAS | Ceylan, Anderson, \& Wood 2023). \href{https://replications.clearerthinking.org/replication-2023pnas120-30/}{[Report]}}
+
+\pub{\textbf{Handley-Miner, I. J.} (2024). Replication of a study from ``The illusion of moral decline'' (Nature | Mastroianni \& Gilbert 2023). \href{https://replications.clearerthinking.org/replication-2023nature618/}{[Report]}}
+
+\pub{\textbf{Handley-Miner, I. J.} \& Metskas, A. (2024). Replication of a study from ``The Visual Mandela Effect as Evidence for Shared and Specific False Memories Across People'' (Psychological Science | Prasad \& Bainbridge 2022). \href{https://replications.clearerthinking.org/replication-2022psci33-12/}{[Report]}}
+
+% === CONFERENCE TALKS ===
+\section{Conference Talks \& Sessions}
+
+\cventry{``To pilot or not to pilot, that's not the question'' (Hackathon)}{June 2024}
+    {Society for the Improvement of Psychological Science (SIPS), Online}
+
+\cventry{``Should our field share methods and results from pilot studies?'' (Roundtable)}{February 2024}
+    {Society for Personality and Social Psychology, San Diego, CA}
+
+\cventry{``Examining truth in the Post-Truth Era'' (Talk)}{July 2023}
+    {National Defense Science and Engineering Graduate Fellowship Conference, San Antonio, TX}
+
+\cventry{``Evaluations of truth and trustworthiness'' (Talk)}{September 2022}
+    {Air Force Office of Sponsored Research (AFOSR) Intent and Influence Program Review, Arlington, VA}
+
+\cventry{``Rarely Pure and Never Simple: Truth evaluations and the role of intent'' (Talk)}{July 2022}
+    {Society for Philosophy and Psychology (SPP), Milan, Italy}
+
+% === INVITED TALKS ===
+\section{Invited Talks}
+
+\cventry{``What counts as true?''}{January 2026}
+    {WyLab (PI: Jordan Wylie), Cornell University, Ithaca, NY}
+
+\cventry{``A call for greater transparency in piloting''}{September 2025}
+    {Computational Minds and Machines Lab (PI: Max Kleiman-Weiner), University of Washington, Seattle, WA}
+
+\cventry{``Reporting of pilot studies in psychology''}{December 2024}
+    {Phil Lab (PI: Jonathan Phillips), Dartmouth, Hanover, NH}
+
+\cventry{``Reporting of pilot studies in psychology''}{November 2023}
+    {Saxe Lab (PI: Rebecca Saxe), MIT, Cambridge, MA}
+
+\cventry{``Leveraging philosophical and folk conceptions of truth\ldots''}{January 2023}
+    {Schiller Institute for Integrated Science and Society, Chestnut Hill, MA}
+
+% === POSTER PRESENTATIONS ===
+\section{Poster Presentations}
+
+\cventry{Not reporting pilot studies can obscure the generalizability of psychological research}{February 2025}
+    {Society for Personality and Social Psychology (SPSP), Denver, CO}
+
+\cventry{Does the process of explaining affect one's beliefs?}{July 2024}
+    {Cognitive Science Society (CogSci), Rotterdam, Netherlands}
+
+\cventry{Does the process of explaining affect one's beliefs?}{February 2024}
+    {Society for Personality and Social Psychology (SPSP), San Diego, CA}
+
+\cventry{Are people sensitive to the consequences of an assertion when evaluating its truth?}{June 2023}
+    {Society for Philosophy and Psychology (SPP), Pittsburgh, PA}
+
+\cventry{Do the intentions of information sources sway people's truth classifications?}{February 2023}
+    {Society for Personality and Social Psychology (SPSP), Atlanta, GA}
+
+\cventry{Truth evaluations are sensitive to intent, even when beliefs are controlled for}{February 2023}
+    {Misinformation and Belief Science Preconference at SPSP, Atlanta, GA}
+
+\cventry{Rarely Pure and Never Simple: Truth evaluations and the role of intent}{June 2022}
+    {Max Planck Summer Institute on Bounded Rationality, Berlin, Germany}
+
+\cventry{Nothing but the Truth? Exploring the Role of Intent in Lay Conceptions of Truth}{February 2022}
+    {Society for Personality and Social Psychology (SPSP), San Francisco, CA}
+
+\cventry{Explanation and Belief: Does the Process of Explaining Sway Judgments of Truth?}{February 2021}
+    {Society for Personality and Social Psychology (SPSP)}
+
+\cventry{Meta-Mindsets: Towards a More Agentic, Ethical, and Generalizable Approach}{February 2020}
+    {Society for Personality and Social Psychology (SPSP), New Orleans, LA}
+
+\cventry{Intervening on Meta-Mindsets Affects Domain-Specific Mindsets}{May 2019}
+    {Association for Psychological Science (APS), Washington, DC}
+
+\cventry{Meta-Mindsets: A More Agentic, Ethical, and Generalizable Approach}{February 2019}
+    {Society for Personality and Social Psychology (SPSP), Portland, OR}
+
+% === METASCIENCE POSITIONS ===
+\section{Metascience \& Open Science Positions}
+
+\cventry{Computational Reproducibility Checker, REPEAT Network}{2025--present}
+    {Psychological Science}
+
+\cventry{BITSS Catalyst}{2024--present}
+    {Berkeley Initiative for Transparency in the Social Sciences}
+
+\cventry{Replication Scholar}{2023--present}
+    {Transparent Replications Project}
+
+% === OTHER EXPERIENCE ===
+\section{Other Research \& Work Experience}
+
+\cventrynote{Lab Manager}{2017--2020}
+    {Department of Psychology, Stanford University, Stanford, CA}
+    {Advisor: Alia Crum}
+
+\cventry{Research Associate}{2016--2017}
+    {iThrive Games, Boston, MA}
+
+\cventry{Producer \& Market Research Coordinator}{2014--2016}
+    {Glue Advertising, New York, NY}
+
+\cventry{Research Assistant}{2013}
+    {Center for Emotional Intelligence, Yale University, New Haven, CT}
+
+% === DEI ===
+\section{Diversity, Equity, \& Inclusion}
+
+\cventry{Co-Founder; Mentor, Pre-Doctoral Mentorship Program}{2021--present}
+    {Boston College}
+
+\cventry{Graduate Student Member, DEIB Committee}{2020--2025}
+    {Boston College}
+
+\cventry{Teaching Assistant, Prison Education Program}{2022}
+    {MCI--Shirley, Boston College}
+
+\cventry{Workshop Instructor, Paths to PhD}{2017--2019}
+    {Stanford University}
+
+% === TEACHING ===
+\section{Teaching \& Mentorship}
+
+\cventrynote{Honors Thesis Advisor}{2021--2022}
+    {Psychology Honors Thesis Project, Boston College}
+    {Student: Dan Ulanovsky}
+
+\cventry{Teaching Assistant, Brain, Mind, \& Behavior}{2020--2021}
+    {Boston College}
+
+\cventry{Teaching Assistant, Health Psychology}{2018}
+    {Stanford University}
+
+\cventry{Writing Tutor}{2012--2014}
+    {Hamilton College}
+
+% === METHODS TRAINING ===
+\section{Methods \& Statistics Training}
+
+\begin{itemize}[itemsep=0.2em]
+    \item Mathematics and Computation for Psychology \& Neuroscience, Boston College (2024)
+    \item BITSS Research Transparency and Reproducibility Training, UC Berkeley (2023)
+    \item Max Planck Summer Institute on Bounded Rationality (2022)
+    \item Methods for Handling Missing Data, Boston College (2022)
+    \item Multilevel Modeling, Boston College (2022)
+    \item Survey Methods in Educational and Social Research, Boston College (2021)
+    \item Multiple Regression, Boston College (2021)
+    \item Computational Approaches to Social Cognition, Harvard University (2020)
+    \item Experimental Design and Statistics, Boston College (2020)
+    \item Graduate Programming Lab, Boston College (2020)
+    \item Meta-Research Methods, Stanford University (2019)
+    \item Experimental Methods, Stanford University (2018)
+    \item Econometrics, Hamilton College (2013)
+    \item Economic Statistics, Hamilton College (2012)
+\end{itemize}
+
+\end{document}
