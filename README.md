@@ -4,7 +4,9 @@ A clean, single-page academic website built with plain HTML and CSS. Hosted on G
 
 ## Updating Content
 
-Edit `index.html` to update your bio, CV, or publications. The file contains clear section comments and copy-paste templates for adding new entries.
+Edit `index.html` to update your bio and `publications.html` to update publications (it has a copy-paste template for new entries).
+
+To update the CV, replace `assets/cv.pdf` with the new PDF (keep the same file name so the download link keeps working).
 
 ## Deploying Changes
 
