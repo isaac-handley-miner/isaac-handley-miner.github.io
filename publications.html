@@ -24,149 +24,150 @@
 <main>
 
     <!-- ====== PUBLICATIONS ======
-         To add a new publication, copy this template and paste it
-         as a new <li> at the TOP of the relevant list:
+         To add a publication, copy this template to the TOP of the right list.
+         data-topic must be one of: truth, meta, health (these drive the filter buttons).
+         Leave out the <a> around the title if there is no link.
 
-         <li>
-             <strong>Handley-Miner, I. J.</strong>, Co-Author, A. B.
-             "Paper Title."
-             <span class="pub-venue">Journal Name</span>, Year.
-             <a href="https://doi.org/..." class="pub-link">[DOI]</a>
+         <li class="pub" data-topic="truth">
+             <p class="pub-meta">
+                 <span class="pub-year">2026</span>
+                 <span class="pub-venue">Journal Name</span>
+             </p>
+             <h3 class="pub-title"><a href="https://doi.org/...">Paper title</a></h3>
+             <p class="pub-authors"><strong>Handley-Miner, I. J.</strong>, Co-Author, A. B.</p>
          </li>
     -->
     <section id="publications">
-        <h2>Published &amp; In Press</h2>
+        <h1 class="page-title">Publications</h1>
+        <p class="page-intro">
+            Research on how people decide what counts as true, and on making psychological
+            science more transparent and replicable. Also on
+            <a href="https://scholar.google.com/citations?user=kPy78bQAAAAJ&amp;hl=en">Google Scholar</a>.
+        </p>
 
-        <ul class="pub-list">
-            <li>
-                <strong>Handley-Miner, I. J.</strong>, Bochynska, A., Buttliere, B., Chung, K. L., Elsherif, M., Graham, C., Heiser, N. H., Loenneker, H. D., Sætrevik, B., Seetahul, Y., Sulik, J., Tomczak, K., Zygar-Hoffmann, C., &amp; Neff, M. B. (2026).
-                "A call for greater transparency in piloting."
-                <span class="pub-venue">Advances in Methods and Practices in Psychological Science</span>, 9(4).
-                <a href="https://doi.org/10.1177/25152459261487966" class="pub-link">[DOI]</a>
-            </li>
+        <div class="pub-filters" role="group" aria-label="Filter by topic" hidden>
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="truth" aria-pressed="false"><span class="dot dot-truth"></span>Truth &amp; belief</button>
+            <button type="button" data-filter="meta" aria-pressed="false"><span class="dot dot-meta"></span>Metascience</button>
+            <button type="button" data-filter="health" aria-pressed="false"><span class="dot dot-health"></span>Health &amp; wellbeing</button>
+        </div>
 
-            <li>
-                Oktar, K.,* <strong>Handley-Miner, I. J.</strong>,* Zollman, K., Kleiman-Weiner, M., &amp; Young, L. (2026).
-                "Intuitive theories of truth."
-                <span class="pub-venue">Trends in Cognitive Sciences</span>, 30(3), 197&ndash;199.
-                <a href="https://doi.org/10.1016/j.tics.2026.01.001" class="pub-link">[DOI]</a>
-            </li>
+        <div class="pub-group">
+            <h2>Published</h2>
+            <ul class="pub-list">
+                <li class="pub" data-topic="meta">
+                    <p class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">Advances in Methods and Practices in Psychological Science</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.1177/25152459261487966">A call for greater transparency in piloting</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong>, Bochynska, A., Buttliere, B., Chung, K. L., Elsherif, M., Graham, C., Heiser, N. H., Loenneker, H. D., Sætrevik, B., Seetahul, Y., Sulik, J., Tomczak, K., Zygar-Hoffmann, C., &amp; Neff, M. B.</p>
+                </li>
 
-            <li>
-                <strong>Handley-Miner, I. J.</strong>, Pope, M., Atkins, R. K., Jones-Jang, S. M., McKaughan, D. J., Phillips, J., &amp; Young, L. (2023).
-                "The intentions of information sources can affect what information people think qualifies as true."
-                <span class="pub-venue">Scientific Reports</span>, 13, 7718.
-                <a href="https://doi.org/10.1038/s41598-023-34806-4" class="pub-link">[DOI]</a>
-            </li>
+                <li class="pub" data-topic="truth">
+                    <p class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">Trends in Cognitive Sciences</span><span class="pub-badge">Co-first author</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.1016/j.tics.2026.01.001">Intuitive theories of truth</a></h3>
+                    <p class="pub-authors">Oktar, K.*, <strong>Handley-Miner, I. J.</strong>*, Zollman, K., Kleiman-Weiner, M., &amp; Young, L.</p>
+                </li>
 
-            <li>
-                Crum, A. J., Santoro, E., <strong>Handley-Miner, I. J.</strong>, Smith, E. N., Evans, K., Moraveji, N., Achor, S., &amp; Salovey, P. (2023).
-                "Evaluation of the 'rethink stress' mindset intervention: A metacognitive approach to changing mindsets."
-                <span class="pub-venue">Journal of Experimental Psychology: General</span>, 152(9), 2603&ndash;2622.
-                <a href="https://doi.org/10.1037/xge0001396" class="pub-link">[DOI]</a>
-            </li>
+                <li class="pub" data-topic="truth">
+                    <p class="pub-meta"><span class="pub-year">2023</span><span class="pub-venue">Scientific Reports</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.1038/s41598-023-34806-4">The intentions of information sources can affect what information people think qualifies as true</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong>, Pope, M., Atkins, R. K., Jones-Jang, S. M., McKaughan, D. J., Phillips, J., &amp; Young, L.</p>
+                </li>
 
-            <li>
-                <strong>Handley-Miner, I. J.</strong> &amp; Young, L. (2021).
-                "Do knowledge representations facilitate learning under epistemic uncertainty?"
-                <span class="pub-venue">Behavioral and Brain Sciences</span>, 44, e156.
-                <a href="https://doi.org/10.1017/S0140525X20001806" class="pub-link">[DOI]</a>
-            </li>
+                <li class="pub" data-topic="health">
+                    <p class="pub-meta"><span class="pub-year">2023</span><span class="pub-venue">Journal of Experimental Psychology: General</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.1037/xge0001396">Evaluation of the &ldquo;rethink stress&rdquo; mindset intervention: A metacognitive approach to changing mindsets</a></h3>
+                    <p class="pub-authors">Crum, A. J., Santoro, E., <strong>Handley-Miner, I. J.</strong>, Smith, E. N., Evans, K., Moraveji, N., Achor, S., &amp; Salovey, P.</p>
+                </li>
 
-            <li>
-                Turnwald, B. P., <strong>Handley-Miner, I. J.</strong>, Samuels, N. A., Markus, H. R., &amp; Crum, A. J. (2020).
-                "Nutritional analysis of foods and beverages depicted in top-grossing US movies, 1994&ndash;2018."
-                <span class="pub-venue">JAMA Internal Medicine</span>, 181(1), 61&ndash;70.
-                <a href="https://doi.org/10.1001/jamainternmed.2020.5421" class="pub-link">[DOI]</a>
-            </li>
+                <li class="pub" data-topic="truth">
+                    <p class="pub-meta"><span class="pub-year">2021</span><span class="pub-venue">Behavioral and Brain Sciences</span><span class="pub-badge">Commentary</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.1017/S0140525X20001806">Do knowledge representations facilitate learning under epistemic uncertainty?</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong> &amp; Young, L.</p>
+                </li>
 
-            <li>
-                Crum, A. J., <strong>Handley-Miner, I. J.</strong>, &amp; Smith, E. N. (2020).
-                "The stress mindset intervention."
-                In A. J. Crum &amp; G. M. Walton (Eds.), <span class="pub-venue">Handbook of Wise Interventions: How Social-Psychological Insights Can Help Solve Problems</span>. New York, NY: Guilford Press.
-            </li>
+                <li class="pub" data-topic="health">
+                    <p class="pub-meta"><span class="pub-year">2020</span><span class="pub-venue">JAMA Internal Medicine</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.1001/jamainternmed.2020.5421">Nutritional analysis of foods and beverages depicted in top-grossing US movies, 1994&ndash;2018</a></h3>
+                    <p class="pub-authors">Turnwald, B. P., <strong>Handley-Miner, I. J.</strong>, Samuels, N. A., Markus, H. R., &amp; Crum, A. J.</p>
+                </li>
 
-            <li>
-                Rivers, S. E., <strong>Handley-Miner, I. J.</strong>, Caruso, D., &amp; Mayer, J. D. (2020).
-                "Emotional intelligence."
-                In R. J. Sternberg (Ed.), <span class="pub-venue">The Cambridge Handbook of Intelligence</span>. New York, NY: Cambridge University Press.
-            </li>
-        </ul>
+                <li class="pub" data-topic="health">
+                    <p class="pub-meta"><span class="pub-year">2020</span><span class="pub-venue">Handbook of Wise Interventions (Guilford Press)</span><span class="pub-badge">Chapter</span></p>
+                    <h3 class="pub-title">The stress mindset intervention</h3>
+                    <p class="pub-authors">Crum, A. J., <strong>Handley-Miner, I. J.</strong>, &amp; Smith, E. N.</p>
+                </li>
+
+                <li class="pub" data-topic="health">
+                    <p class="pub-meta"><span class="pub-year">2020</span><span class="pub-venue">The Cambridge Handbook of Intelligence</span><span class="pub-badge">Chapter</span></p>
+                    <h3 class="pub-title">Emotional intelligence</h3>
+                    <p class="pub-authors">Rivers, S. E., <strong>Handley-Miner, I. J.</strong>, Caruso, D., &amp; Mayer, J. D.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pub-group">
+            <h2>Under Review</h2>
+            <ul class="pub-list">
+                <li class="pub" data-topic="truth">
+                    <p class="pub-meta"><span class="pub-status">Revise &amp; resubmit</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.71240/lcyc.139469">How does the process of explaining affect one&rsquo;s beliefs?</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong> &amp; Young, L.</p>
+                </li>
+
+                <li class="pub" data-topic="truth">
+                    <p class="pub-meta"><span class="pub-status">Revise &amp; resubmit</span><span class="pub-badge">Co-first author</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.31234/osf.io/r8swt_v2">The role of consequence in evaluating claims as true or false</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong>*, Mazzuchi, T.*, Kleiman-Weiner, M., &amp; Young, L.</p>
+                </li>
+
+                <li class="pub" data-topic="meta">
+                    <p class="pub-meta"><span class="pub-status">Revise &amp; resubmit</span></p>
+                    <h3 class="pub-title"><a href="https://doi.org/10.31234/osf.io/t968e_v4">What pilot studies can (and cannot) do for validity in psychological research</a></h3>
+                    <p class="pub-authors">Seetahul, Y., Elsherif, M., Zygar-Hoffmann, C., Wallrich, L., Silverstein, P., Sætrevik, B., Pit, I. L., Loenneker, H. D., Heiser, N. H., <strong>Handley-Miner, I. J.</strong>, Graham, C. J., Chou, Y. Y., Buttliere, B., Bochynska, A., Beitner, J., &amp; Neff, M. B.</p>
+                </li>
+
+                <li class="pub" data-topic="truth">
+                    <p class="pub-meta"><span class="pub-status">In submission</span></p>
+                    <h3 class="pub-title">Two functions of listener truth-ascriptions</h3>
+                    <p class="pub-authors">Atkins, R., <strong>Handley-Miner, I. J.</strong>, Pope, M., McKaughan, D. J., &amp; Young, L.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pub-group">
+            <h2>Replication Reports</h2>
+            <p class="pub-group-note">
+                Independent replications of recent studies in top journals, published by
+                <a href="https://replications.clearerthinking.org/">Transparent Replications</a>.
+            </p>
+            <ul class="pub-list">
+                <li class="pub" data-topic="meta">
+                    <p class="pub-meta"><span class="pub-year">2026</span><span class="pub-venue">Replication of Vaz et al. (2025), Psychological Science</span></p>
+                    <h3 class="pub-title"><a href="https://replications.clearerthinking.org/2025psci36-8/">&lsquo;Stop the Count!&rsquo;: How reporting partial election results fuels beliefs in election fraud</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong> &amp; Metskas, A.</p>
+                </li>
+
+                <li class="pub" data-topic="meta">
+                    <p class="pub-meta"><span class="pub-year">2025</span><span class="pub-venue">Evaluation of Ceylan, Anderson, &amp; Wood (2023), PNAS</span></p>
+                    <h3 class="pub-title"><a href="https://replications.clearerthinking.org/replication-2023pnas120-30/">Sharing of misinformation is habitual, not just lazy or biased</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong> &amp; Metskas, A.</p>
+                </li>
+
+                <li class="pub" data-topic="meta">
+                    <p class="pub-meta"><span class="pub-year">2024</span><span class="pub-venue">Replication of Mastroianni &amp; Gilbert (2023), Nature</span></p>
+                    <h3 class="pub-title"><a href="https://replications.clearerthinking.org/replication-2023nature618/">The illusion of moral decline</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong></p>
+                </li>
+
+                <li class="pub" data-topic="meta">
+                    <p class="pub-meta"><span class="pub-year">2024</span><span class="pub-venue">Replication of Prasad &amp; Bainbridge (2022), Psychological Science</span></p>
+                    <h3 class="pub-title"><a href="https://replications.clearerthinking.org/replication-2022psci33-12/">The visual Mandela effect as evidence for shared and specific false memories across people</a></h3>
+                    <p class="pub-authors"><strong>Handley-Miner, I. J.</strong> &amp; Metskas, A.</p>
+                </li>
+            </ul>
+        </div>
 
         <p class="pub-note">* Co-first authorship</p>
-
-        <h2>Manuscripts in Submission</h2>
-
-        <ul class="pub-list">
-            <li>
-                <strong>Handley-Miner, I. J.</strong> &amp; Young, L. (revise and resubmit).
-                "How does the process of explaining affect one's beliefs?"
-                <a href="https://doi.org/10.71240/lcyc.139469" class="pub-link">[Preprint]</a>
-            </li>
-
-            <li>
-                <strong>Handley-Miner, I. J.</strong>,* Mazzuchi, T.,* Kleiman-Weiner, M., &amp; Young, L. (revise and resubmit).
-                "The role of consequence in evaluating claims as true or false."
-                <a href="https://doi.org/10.31234/osf.io/r8swt_v2" class="pub-link">[Preprint]</a>
-            </li>
-
-            <li>
-                Atkins, R., <strong>Handley-Miner, I. J.</strong>, Pope, M., McKaughan, D. J., &amp; Young, L. (in submission).
-                "Two functions of listener truth-ascriptions."
-            </li>
-
-            <li>
-                Seetahul, Y., Elsherif, M., Zygar-Hoffmann, C., Wallrich, L., Silverstein, P., Sætrevik, B., Pit, I. L., Loenneker, H. D., Heiser, N. H., <strong>Handley-Miner, I. J.</strong>, Graham, C. J., Chou, Y. Y., Buttliere, B., Bochynska, A., Beitner, J., &amp; Neff, M. B. (revise and resubmit).
-                "What pilot studies can (and cannot) do for validity in psychological research."
-                <a href="https://doi.org/10.31234/osf.io/t968e_v4" class="pub-link">[Preprint]</a>
-            </li>
-        </ul>
-
-        <h2>Manuscripts in Preparation</h2>
-
-        <ul class="pub-list">
-            <li>
-                <strong>Handley-Miner, I. J.</strong>, Zheng, H., &amp; Young, L. (in prep).
-                "People's descriptive and normative judgments about how other people and LLMs should label information as true and false."
-            </li>
-
-            <li>
-                Bochynska, A., Ambrosini, E., Bardeau, A., Beitner, J., Buttliere, B., Chou, Y., Chung, K. L., Di Pietro, I., Elsherif, M., Gourdon-Kanhukamwe, A., Graham, C., <strong>Handley-Miner, I. J.</strong>, Hergert, J., Loenneker, H. D., Montefinese, M., Pit, I., Pronizius, E., Quandt, J., Srivastava, R., Stoevenbelt, A., Viviani, G., Wallrich, L., Zygar-Hoffmann, C., &amp; Neff, M. B. (in prep).
-                "A meta-assessment of piloting practices in psychological research."
-            </li>
-        </ul>
-
-        <h2>Replication Reports</h2>
-
-        <ul class="pub-list">
-            <li>
-                <strong>Handley-Miner, I. J.</strong> &amp; Metskas, A. (2026).
-                "Replication of a study from '&lsquo;Stop the Count!&rsquo;&mdash;How Reporting Partial Election Results Fuels Beliefs in Election Fraud' (Psychological Science | Vaz et al. 2025)."
-                <span class="pub-venue">Transparent Replications</span>.
-                <a href="https://replications.clearerthinking.org/2025psci36-8/" class="pub-link">[Report]</a>
-            </li>
-
-            <li>
-                <strong>Handley-Miner, I. J.</strong> &amp; Metskas, A. (2025).
-                "Evaluation of a study from 'Sharing of misinformation is habitual, not just lazy or biased' (PNAS | Ceylan, Anderson, &amp; Wood 2023)."
-                <span class="pub-venue">Transparent Replications</span>.
-                <a href="https://replications.clearerthinking.org/replication-2023pnas120-30/" class="pub-link">[Report]</a>
-            </li>
-
-            <li>
-                <strong>Handley-Miner, I. J.</strong> (2024).
-                "Replication of a study from 'The illusion of moral decline' (Nature | Mastroianni &amp; Gilbert 2023)."
-                <span class="pub-venue">Transparent Replications</span>.
-                <a href="https://replications.clearerthinking.org/replication-2023nature618/" class="pub-link">[Report]</a>
-            </li>
-
-            <li>
-                <strong>Handley-Miner, I. J.</strong> &amp; Metskas, A. (2024).
-                "Replication of a study from 'The Visual Mandela Effect as Evidence for Shared and Specific False Memories Across People' (Psychological Science | Prasad &amp; Bainbridge 2022)."
-                <span class="pub-venue">Transparent Replications</span>.
-                <a href="https://replications.clearerthinking.org/replication-2022psci33-12/" class="pub-link">[Report]</a>
-            </li>
-        </ul>
     </section>
 
 </main>
@@ -174,6 +175,28 @@
 <footer>
     &copy; 2026 Isaac J. Handley-Miner. Last updated: November 2026.
 </footer>
+
+<script>
+    // Topic filter: shows only publications whose data-topic matches the chosen button.
+    (function () {
+        var bar = document.querySelector('.pub-filters');
+        if (!bar) return;
+        bar.hidden = false;
+        var buttons = bar.querySelectorAll('button');
+        bar.addEventListener('click', function (e) {
+            var btn = e.target.closest('button');
+            if (!btn) return;
+            var f = btn.getAttribute('data-filter');
+            buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+            document.querySelectorAll('.pub').forEach(function (li) {
+                li.hidden = f !== 'all' && li.getAttribute('data-topic') !== f;
+            });
+            document.querySelectorAll('.pub-group').forEach(function (g) {
+                g.hidden = !g.querySelector('.pub:not([hidden])');
+            });
+        });
+    })();
+</script>
 
 </body>
 </html>

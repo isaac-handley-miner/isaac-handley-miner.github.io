@@ -74,13 +74,13 @@
   *Director*, Transparent Replications \
   #sub[#link("https://replications.clearerthinking.org/")[replications.clearerthinking.org]]
 ]
+
+= Education
+
 #entry[2025 – 2026][
   *Postdoctoral Research Fellow*, Boston College \
   #sub[Department of Psychology & Neuroscience]
 ]
-
-= Education
-
 #entry[2020 – 2025][
   *Ph.D., Psychology*, Boston College \
   #sub[Advisor: Liane Young]
